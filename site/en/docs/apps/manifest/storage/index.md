@@ -6,13 +6,13 @@ title: "Manifest for storage areas"
 #description: TODO
 ---
 
-!!!.aside.aside--caution
+{% Aside 'caution' %}
 
 **Important:** Chrome will be removing support for Chrome Apps on all platforms. Chrome browser and
 the Chrome Web Store will continue to support extensions. [**Read the announcement**][1] and learn
 more about [**migrating your app**][2].
 
-!!!
+{% endAside %}
 
 Unlike the `local` and `sync` storage areas, the `managed` storage area requires its structure to be
 declared as [JSON Schema][3] and is strictly validated by Chrome. This schema must be stored in a
@@ -140,8 +140,8 @@ published by the `storage.managed` API.
 }
 ```
 
-[1]: https://blog.chromium.org/2020/01/moving-forward-from-chrome-apps.html
-[2]: https://developer.chrome.com/apps/migration
+[1]: https://blog.chromium.org/2020/08/changes-to-chrome-app-support-timeline.html
+[2]: /apps/migration
 [3]: https://tools.ietf.org/html/draft-zyp-json-schema-03
 [4]: https://www.chromium.org/administrators/
 [5]: ../storage#property-managed

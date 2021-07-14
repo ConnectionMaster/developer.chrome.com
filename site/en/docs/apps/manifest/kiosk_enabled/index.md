@@ -6,13 +6,13 @@ updated: 2014-07-18
 description: Reference documentation for the kiosk_enabled property of manifest.json.
 ---
 
-!!!.aside.aside--caution
+{% Aside 'caution' %}
 
 **Important:** Chrome will be removing support for Chrome Apps on all platforms. Chrome browser and
 the Chrome Web Store will continue to support extensions. [**Read the announcement**][1] and learn
 more about [**migrating your app**][2].
 
-!!!
+{% endAside %}
 
 Kiosk Apps are Chrome Apps that are designed to always run fullscreen using [Single App Kiosk
 Mode][3] on Chrome OS and do not allow the user to exit the app. They're great for a purpose-built
@@ -92,20 +92,20 @@ Kiosk App through the [Chrome web store payment flow][14].
 - [Movie theater app][17]
 - [Kiosk apps in the Chrome Web Store][18]
 
-[1]: https://blog.chromium.org/2020/01/moving-forward-from-chrome-apps.html
-[2]: https://developer.chrome.com/apps/migration
+[1]: https://blog.chromium.org/2020/08/changes-to-chrome-app-support-timeline.html
+[2]: /apps/migration
 [3]: https://support.google.com/chromebook/answer/3134673
 [4]: https://support.google.com/chromebook/answer/3134673
 [5]: https://support.google.com/chrome/a/answer/3017014
 [6]: https://support.google.com/chromebook/answer/3134673
-[7]: https://developer.chrome.com/apps/manifest/offline_enabled
-[8]: https://developer.chrome.com/apps/fileSystem
-[9]: https://developer.chrome.com/apps/offline_apps.html
-[10]: https://developer.chrome.com/apps/about_apps
-[11]: https://developer.chrome.com/apps/app_architecture
-[12]: https://developer.chrome.com/apps/manifest
-[13]: https://developer.chrome.com/apps/app_runtime#event-onLaunched
-[14]: https://developer.chrome.com/webstore/money
+[7]: /apps/manifest/offline_enabled
+[8]: /apps/fileSystem
+[9]: /docs/apps/offline_apps
+[10]: /apps/about_apps
+[11]: /apps/app_architecture
+[12]: /apps/manifest
+[13]: /apps/app_runtime#event-onLaunched
+[14]: /webstore/money
 [15]: https://github.com/KioskApps/InfoHub
 [16]: https://github.com/KioskApps/SalesPoint
 [17]: https://github.com/KioskApps/QuickTicket

@@ -6,13 +6,13 @@ updated: 2014-10-20
 description: An introduction to the codelab.
 ---
 
-!!!.aside.aside--caution
+{% Aside 'caution' %}
 
 **Important:** Chrome will be removing support for Chrome Apps on all platforms. Chrome browser and
 the Chrome Web Store will continue to support extensions. [**Read the announcement**][1] and learn
 more about [**migrating your app**][2].
 
-!!!
+{% endAside %}
 
 Welcome to the Chrome Apps codelab.
 
@@ -20,7 +20,7 @@ Follow along with each step to learn about the basic building blocks of the Chro
 the end of this codelab, you will have an offline-enabled and feature-rich Todo app that you can
 install on your desktop computer.
 
-{% img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/epH3dXjtGY32KrRzPjt2.png",
+{% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/epH3dXjtGY32KrRzPjt2.png",
        alt="A screenshot of the finished codelab", height="538", width="800" %}
 
 The finished Todo app can be [installed from the Chrome Web Store][3].
@@ -48,17 +48,17 @@ the reference code.
 
 Let's get started. Go to [Step 1 - Create and run a Chrome App »][14]
 
-[1]: https://blog.chromium.org/2020/01/moving-forward-from-chrome-apps.html
-[2]: https://developer.chrome.com/apps/migration
+[1]: https://blog.chromium.org/2020/08/changes-to-chrome-app-support-timeline.html
+[2]: /apps/migration
 [3]: http://goo.gl/qNNUX
-[4]: app_codelab_basics.html
-[5]: app_codelab_todomvc.html
-[6]: app_codelab_alarms.html
-[7]: app_codelab_webview.html
-[8]: app_codelab_images.html
-[9]: app_codelab_filesystem.html
-[10]: app_codelab_publish.html
+[4]: ../app_codelab_basics
+[5]: ../app_codelab_import_todomvc
+[6]: ../app_codelab_alarms
+[7]: ../app_codelab_webview
+[8]: ../app_codelab_images
+[9]: ../app_codelab_filesystem
+[10]: ../app_codelab_publish
 [11]: https://www.google.com/intl/en/chrome/browser/
 [12]: https://github.com/mangini/io13-codelab/archive/master.zip
 [13]: https://github.com/mangini/io13-codelab/tree/master/cheat_code
-[14]: app_codelab_basics.html
+[14]: ../app_codelab_basics

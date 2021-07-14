@@ -52,7 +52,7 @@ finer-grained control what information and resources could be accessed by any
 extensions they install. The extensions platform also sandboxed extensions in
 separate processes, providing additional security.
 
-{% img src="image/SHhb2PDKzXTggPGAYpv8JgR81pX2/1604880385879.svg", alt="Diagram of timeline from previous efforts through current state and future directions", width="574", height="119" %}
+{% Img src="image/SHhb2PDKzXTggPGAYpv8JgR81pX2/1604880385879.svg", alt="Diagram of timeline from previous efforts through current state and future directions", width="574", height="119" %}
 
 Developers have used our platforms to build a wonderful range of extensions,
 providing Chrome users with all kinds of enhancements to the browser experience.
@@ -71,7 +71,7 @@ while preserving or extending the capability of extensions and keeping a
 webby developer experience.
 
 {% 
-  img src='image/SHhb2PDKzXTggPGAYpv8JgR81pX2/1604881144327.svg', 
+  Img src='image/SHhb2PDKzXTggPGAYpv8JgR81pX2/1604881144327.svg', 
   alt='Diagram showing privacy, security, and performance as pillars atop a foundation of webbiness and performance', 
   width='426', 
   height='345'
@@ -115,7 +115,7 @@ other resources. The platform already begins to address this by:
 We'll continue to improve this user experience. Look for an increasing emphasis
 on temporary, in-context style of permissions grants, constraining passive
 access to user data. The introduction of
-[activeTab](https://developer.chrome.com/extensions/activeTab) was an initial
+[activeTab](/extensions/activeTab) was an initial
 step in this direction.
 
 It's also important that users make informed decisions about how their data is
@@ -134,7 +134,7 @@ they're needed.
 
 Beyond that, we'll be providing new API features to help
 extensions perform work without requiring data access. Chrome's
-[declarativeNetRequest](https://developer.chrome.com/extensions/declarativeNetRequest)
+[declarativeNetRequest](/extensions/declarativeNetRequest)
 is an example of this approach.
 
 

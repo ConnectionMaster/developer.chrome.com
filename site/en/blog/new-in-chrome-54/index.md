@@ -23,7 +23,7 @@ of the script. It includes all of the relevant links I mentioned, and a few
 other helpful links. Leave your thoughts in the comments and let me know
 if this is useful to you!
 
-{% youtube id="qPD2yc8BoDk" %}
+{% YouTube id="qPD2yc8BoDk" %}
 
 [Watch on YouTube](https://www.youtube.com/watch?v=qPD2yc8BoDk)
 
@@ -102,7 +102,7 @@ Check the description for more details and links the documentation and
 specifications.
 
 Oh, and don't forget to check out the
-[Chrome Dev Summit](https://developer.chrome.com/devsummit/), we'll be streaming
+[Chrome Dev Summit](/devsummit/), we'll be streaming
 it on YouTube on November 10th and 11th.
 
 If you want to stay up to date with Chrome and know what's coming, click

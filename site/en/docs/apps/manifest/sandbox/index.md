@@ -6,13 +6,13 @@ title: "Manifest - Sandbox"
 #description: TODO
 ---
 
-!!!.aside.aside--caution
+{% Aside 'caution' %}
 
 **Important:** Chrome will be removing support for Chrome Apps on all platforms. Chrome browser and
 the Chrome Web Store will continue to support extensions. [**Read the announcement**][1] and learn
 more about [**migrating your app**][2].
 
-!!!
+{% endAside %}
 
 **_Warning:_** Starting in version 57, Chrome will no longer allow external web content (including
 embedded frames and scripts) inside sandboxed pages. Please use a [webview][3] instead.
@@ -62,11 +62,11 @@ extension's [default Content Security Policy][7].
 
 Sandboxed page may only be specified when using [`manifest_version`][8] 2 or above.
 
-[1]: https://blog.chromium.org/2020/01/moving-forward-from-chrome-apps.html
-[2]: https://developer.chrome.com/apps/migration
-[3]: https://developer.chrome.com/apps/webview_tag
-[4]: https://developer.chrome.com/extensions/contentSecurityPolicy
+[1]: https://blog.chromium.org/2020/08/changes-to-chrome-app-support-timeline.html
+[2]: /apps/migration
+[3]: /apps/webview_tag
+[4]: /extensions/contentSecurityPolicy
 [5]: https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-sandbox
-[6]: https://developer.chrome.com/extensions/sandboxingEval
-[7]: https://developer.chrome.com/extensions/contentSecurityPolicy
-[8]: https://developer.chrome.com/extensions/manifest#manifest_version
+[6]: /extensions/sandboxingEval
+[7]: /extensions/contentSecurityPolicy
+[8]: /extensions/manifest#manifest_version

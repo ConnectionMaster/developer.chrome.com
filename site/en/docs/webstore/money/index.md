@@ -5,12 +5,17 @@ date: 2018-06-11
 description: An overview of how you can monetize Chrome Web Store items.
 ---
 
-!!!.aside.aside--warning
-**Important:** Chrome will be removing support for Chrome Apps on Windows, Mac, and Linux. Chrome OS
+{% Aside 'warning' %}
+The Chrome Web Store payments system [is now deprecated](/docs/webstore/cws-payments-deprecation/).
+You are free to monetize your extensions using other payment platforms.
+{% endAside %}
+
+{% Aside 'caution' %}
+Chrome no longer supports Chrome Apps on Windows, Mac, and Linux. Chrome OS
 will continue to support Chrome Apps. Additionally, Chrome and the Web Store will continue to
-support extensions on all platforms. [Read the announcement][1] and learn more about [migrating your
+support extensions on all platforms. [Read the announcement][1] and learn more about [migrating your	
 app][2].
-!!!
+{% endAside %}
 
 You can publish Hosted Apps, Chrome Apps, Chrome Extensions, and Themes in the Chrome Web Store.
 Collectively these are called simply "Items". You have many choices when it comes to making money
@@ -39,7 +44,7 @@ Generally, Chrome Apps and Extensions can use the Chrome Web Store API to charge
 virtual goods. The fee for using this API is just 5% per transaction. For example, if you charge
 $1.99, you'll receive $1.89; if you charge $9.99, you'll receive $9.49.
 
-<div class="aside aside--note"><strong>Note:</strong> In-app payments for ARC apps are subject to a 30% transaction fee. For example, if you charge $1.99 for an item offered in an ARC app, you'll receive $1.39. This is to ensure a consistent pricing structure with in-app payments made in apps available on Google Play. ARC does not currently support other purchase models including up-front payments, subscriptions and in-app version upgrades; as these types of purchases require provisioning from Google Play which is not currently enabled. For more information on monetizing ARC apps, see <a href="https://developer.chrome.com/apps/getstarted_arc">Get Started with ARC</a>.</div>
+<div class="aside aside--note"><strong>Note:</strong> In-app payments for ARC apps are subject to a 30% transaction fee. For example, if you charge $1.99 for an item offered in an ARC app, you'll receive $1.39. This is to ensure a consistent pricing structure with in-app payments made in apps available on Google Play. ARC does not currently support other purchase models including up-front payments, subscriptions and in-app version upgrades; as these types of purchases require provisioning from Google Play which is not currently enabled. For more information on monetizing ARC apps, see <a href="/apps/getstarted_arc">Get Started with ARC</a>.</div>
 
 ## One-time Payments
 
@@ -50,7 +55,7 @@ users try out the item before purchasing it.
 The charge for using Chrome Web Store Payments is 5%. For example, if you charge
 $1.99, you'll receive $1.89. See [Payments: Regions, Fees, and Tiers][7] for details.
 
-<div class="aside aside--note"><strong>Note:</strong> In-app payments for ARC apps are subject to a 30% transaction fee. For example, if you charge $1.99 for an item offered in an ARC app, you'll receive $1.39. This is to ensure a consistent pricing structure with in-app payments made in apps available on Google Play. ARC does not currently support other purchase models including up-front payments, subscriptions and in-app version upgrades; as these types of purchases require provisioning from Google Play which is not currently enabled. For more information on monetizing ARC apps, see <a href="https://developer.chrome.com/apps/getstarted_arc">Get Started with ARC</a>.</div>
+<div class="aside aside--note"><strong>Note:</strong> In-app payments for ARC apps are subject to a 30% transaction fee. For example, if you charge $1.99 for an item offered in an ARC app, you'll receive $1.39. This is to ensure a consistent pricing structure with in-app payments made in apps available on Google Play. ARC does not currently support other purchase models including up-front payments, subscriptions and in-app version upgrades; as these types of purchases require provisioning from Google Play which is not currently enabled. For more information on monetizing ARC apps, see <a href="/apps/getstarted_arc">Get Started with ARC</a>.</div>
 
 ## Subscriptions
 
@@ -76,7 +81,7 @@ direct the user to the web store listing to purchase the item.
 For details about app payment options, see [Charging for your app][10] in the Overview.
 
 [1]: http://blog.chromium.org/2016/08/from-chrome-apps-to-web.html
-[2]: https://developer.chrome.com/apps/migration
+[2]: /apps/migration
 [3]: /docs/webstore/payments-iap
 [4]: /docs/apps/getstarted_arc
 [5]: /docs/webstore/overview#builtin

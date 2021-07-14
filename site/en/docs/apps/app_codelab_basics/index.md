@@ -6,13 +6,13 @@ updated: 2014-10-20
 description: How to create, install, run, and debug a basic Chrome App.
 ---
 
-!!!.aside.aside--caution
+{% Aside 'caution' %}
 
 **Important:** Chrome will be removing support for Chrome Apps on all platforms. Chrome browser and
 the Chrome Web Store will continue to support extensions. [**Read the announcement**][1] and learn
 more about [**migrating your app**][2].
 
-!!!
+{% endAside %}
 
 In this step, you will learn:
 
@@ -82,7 +82,7 @@ Create the following file and save it as **_background.js_**:
 /**
  * Listens for the app launching then creates the window
  *
- * @see http://developer.chrome.com/apps/app.window.html
+ * @see /apps/app.window.html
  */
 chrome.app.runtime.onLaunched.addListener(function() {
   chrome.app.window.create('index.html', {
@@ -138,7 +138,7 @@ CSS, or assets.
 
 Right-click and save this 128x128 image to your project folder as **_icon_128.png_**:
 
-{% img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/oWw4vtq0F2ZrXo3uKhwG.png",
+{% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/oWw4vtq0F2ZrXo3uKhwG.png",
        alt="Chrome App icon for this codelab", height="128", width="128" %}
 
 You will use this PNG as our application's icon that users will see in the launch menu.
@@ -147,7 +147,7 @@ You will use this PNG as our application's icon that users will see in the launc
 
 You should have these 4 files in your project folder now:
 
-{% img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/gYAyOofu4qTqwZj0tZVL.png",
+{% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/gYAyOofu4qTqwZj0tZVL.png",
        alt="File folder screenshot", height="110", width="590" %}
 
 ## Install a Chrome App in developer mode {: #developer-mode }
@@ -158,14 +158,14 @@ distribution package.
 1.  Access **chrome://extensions** from the Chrome omnibox.
 2.  Check off the **Developer mode** check box.
 
-{% img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/KIzjun6cpH8zHXJ4hBdF.gif",
+{% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/KIzjun6cpH8zHXJ4hBdF.gif",
        alt="Enable developer mode", height="188", width="735" %}
 
 3.  Click **Load unpacked extension**.
 4.  Using the file picker dialog, navigate to your app's project folder and select it to load your
     app.
 
-{% img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/t1hNzCpoh1S1STdxzhMd.gif",
+{% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/t1hNzCpoh1S1STdxzhMd.gif",
        alt="Load unpacked extensions", height="289", width="634" %}
 
 ## Launch your finished Hello World app {: #launch }
@@ -173,7 +173,7 @@ distribution package.
 After loading your project as an unpacked extension, click **Launch** next to your installed app. A
 new standalone window should open up:
 
-{% img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/iibtdGOdf6gyQHUncpH0.png",
+{% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/iibtdGOdf6gyQHUncpH0.png",
        alt="The finished Hello World app after Step 1", height="283", width="334" %}
 
 Congratulations, you've just created a new Chrome App!
@@ -186,7 +186,7 @@ you do on a regular web page.
 After you make changes to your code and reload your app (**right-click > Reload App**), check the
 DevTools console for any errors (**right-click > Inspect Element**).
 
-{% img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/8ZT2FbBlw1hD74sRWHJq.png",
+{% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/8ZT2FbBlw1hD74sRWHJq.png",
        alt="Inspect Element dialog box", height="283", width="334" %}
 
 (We'll cover the **Inspect Background Page** option in [Step 3][7] with alarms.)
@@ -194,7 +194,7 @@ DevTools console for any errors (**right-click > Inspect Element**).
 The DevTools JavaScript console has access to the same APIs available to your app. You can easily
 test an API call before adding it to your code:
 
-{% img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/ip0mFYkSIYw3sObYAow3.png",
+{% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/ip0mFYkSIYw3sObYAow3.png",
        alt="DevTools console log", height="181", width="645" %}
 
 ## For more information {: #recap }
@@ -209,25 +209,25 @@ For more detailed information about some of the APIs introduced in this step, re
 
 Ready to continue onto the next step? Go to [Step 2 - Import an existing web app »][18]
 
-[1]: https://blog.chromium.org/2020/01/moving-forward-from-chrome-apps.html
-[2]: https://developer.chrome.com/apps/migration
+[1]: https://blog.chromium.org/2020/08/changes-to-chrome-app-support-timeline.html
+[2]: /apps/migration
 [3]: #launch
-[4]: /apps/app_runtime.html#event-onLaunched
-[5]: /apps/app_window.html#method-create
+[4]: /docs/extensions/reference/app_runtime#event-onLaunched
+[5]: /docs/extensions/reference/app_window#method-create
 [6]: /devtools
-[7]: app_codelab_alarms.html
+[7]: ../app_codelab_alarms
 [8]: /apps/manifest "Read 'Manifest File Format' in the Chrome developer docs"
 [9]: #manifest "This feature mentioned in 'Create a manifest'"
 [10]: /apps/manifest/icons "Read 'Manifest - Icons' in the Chrome developer docs"
 [11]: #app-icon "This feature mentioned in 'Add an app icon'"
-[12]: app_lifecycle.html "Read 'Manifest File Format' in the Chrome developer docs"
+[12]: ../app_lifecycle "Read 'Manifest File Format' in the Chrome developer docs"
 [13]: #background-script "This feature mentioned in 'Create a background script'"
 [14]:
-  /apps/app_runtime.html#event-onLaunched
+  /docs/extensions/reference/app_runtime#event-onLaunched
   "Read 'chrome.app.runtime.onLaunched' in the Chrome developer docs"
 [15]: #background-script "This feature mentioned in 'Create a background script'"
 [16]:
-  /apps/app_window.html#method-create
+  /docs/extensions/reference/app_window#method-create
   "Read 'chrome.app.window.create()' in the Chrome developer docs"
 [17]: #background-script "This feature mentioned in 'Create a background script'"
-[18]: app_codelab_import_todomvc.html
+[18]: ../app_codelab_import_todomvc

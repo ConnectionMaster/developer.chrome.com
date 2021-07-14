@@ -84,14 +84,14 @@ an invalid condition or action, none of the rules are added and the [runtime.las
 is set when the callback function is called. Each rule in `rule_list` must contain a unique
 identifier that is not currently used by another rule or an empty identifier.
 
-!!!.aside.aside--note
+{% Aside %}
 
 **Note:** Rules are persistent across browsing sessions. Therefore, you should install rules during
 extension installation time using the [`runtime.onInstalled`][15] event. Note that this event is
 also triggered when an extension is updated. Therefore, you should first clear previously installed
 rules and then register new rules.
 
-!!!
+{% endAside %}
 
 ### Removing rules
 
@@ -221,21 +221,21 @@ supports will be listed in the documentation for that event in the "filters" sec
 When matching URLs (as in the example above), event filters support the same URL matching
 capabilities as expressible with a [`events.UrlFilter`][18], except for scheme and port matching.
 
-[1]: /docs/extensions/alarms#event-onAlarm
-[2]: /docs/extensions/alarms#type-Alarm
-[3]: /docs/extensions/alarms
-[4]: /docs/extensions/i18n
-[5]: /docs/extensions/identity
-[6]: /docs/extensions/runtime
-[7]: /docs/extensions/api_index
-[8]: /docs/extensions/declarativeWebRequest
-[9]: /docs/extensions/declarativeContent
-[10]: /docs/extensions/events
+[1]: /docs/extensions/reference/alarms#event-onAlarm
+[2]: /docs/extensions/reference/alarms#type-Alarm
+[3]: /docs/extensions/reference/alarms
+[4]: /docs/extensions/reference/i18n
+[5]: /docs/extensions/reference/identity
+[6]: /docs/extensions/reference/runtime
+[7]: /docs/extensions/reference
+[8]: /docs/extensions/reference/declarativeWebRequest
+[9]: /docs/extensions/reference/declarativeContent
+[10]: /docs/extensions/reference/events
 [11]: #method-Event-addRules
 [12]: #method-Event-removeRules
 [13]: #method-Event-getRules
-[14]: /docs/extensions/runtime#property-lastError
-[15]: /docs/extensions/runtime#event-onInstalled
+[14]: /docs/extensions/reference/runtime#property-lastError
+[15]: /docs/extensions/reference/runtime#event-onInstalled
 [16]: #type-UrlFilter
 [17]: /docs/extensions/mv2/event_pages
 [18]: #type-UrlFilter

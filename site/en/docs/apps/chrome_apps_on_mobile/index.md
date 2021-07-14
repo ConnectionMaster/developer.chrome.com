@@ -6,19 +6,19 @@ date: 2014-04-15
 description: A guide on how to use Apache Cordova to set up your Chrome App to run on Android and iOS devices.
 ---
 
-!!!.aside.aside--caution
+{% Aside 'caution' %}
 
 **Important:** Chrome will be removing support for Chrome Apps on all platforms. Chrome browser and
 the Chrome Web Store will continue to support extensions. [**Read the announcement**][1] and learn
 more about [**migrating your app**][2].
 
-!!!
+{% endAside %}
 
 _**The toolchain for running Chrome Apps on mobile is in early developer preview. Feel free to give
 us your feedback using the [Github issue tracker][3], our [Chrome Apps developer forum][4], on
 [Stack Overflow][5], or our [G+ Developers page][6].**_
 
-{% img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/FNYKWfrpCKjWdrBh45zK.jpg", alt="A Chrome App running on both desktop and mobile", height="459", width="800" %}
+{% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/FNYKWfrpCKjWdrBh45zK.jpg", alt="A Chrome App running on both desktop and mobile", height="459", width="800" %}
 
 ## Overview {: #overview }
 
@@ -358,13 +358,13 @@ on your Android device.
 The Chrome ADT for Android is currently in a pre-alpha release. To try it out, view the
 [ChromeADT.apk release notes][50] for installation and usage instructions.
 
-[1]: https://blog.chromium.org/2020/01/moving-forward-from-chrome-apps.html
-[2]: https://developer.chrome.com/apps/migration
+[1]: https://blog.chromium.org/2020/08/changes-to-chrome-app-support-timeline.html
+[2]: /apps/migration
 [3]: https://github.com/MobileChromeApps/mobile-chrome-apps/issues
 [4]: http://groups.google.com/a/chromium.org/group/chromium-apps/topics
 [5]: http://stackoverflow.com/questions/tagged/google-chrome-app
 [6]: https://plus.google.com/+GoogleChromeDevelopers/
-[7]: http://developer.chrome.com/apps
+[7]: /apps
 [8]: https://github.com/MobileChromeApps/mobile-chrome-apps
 [9]: http://cordova.apache.org
 [10]: #special-considerations-when-developing-with-cordova
@@ -394,21 +394,21 @@ The Chrome ADT for Android is currently in a pre-alpha release. To try it out, v
 [32]: https://play.google.com/apps/publish
 [33]:
   https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html
-[34]: http://developer.chrome.com/apps/app_deprecated
+[34]: /apps/app_deprecated
 [35]: http://www.html5rocks.com/en/mobile/mobifying/#toc-mediaqueries
-[36]: http://developer.chrome.com/apps/app_window.html
+[36]: /docs/extensions/reference/app_window
 [37]: https://github.com/ftlabs/fastclick
 [38]: http://updates.html5rocks.com/2013/12/300ms-tap-delay-gone-away
-[39]: http://developer.chrome.com/apps/identity.html
+[39]: /docs/extensions/reference/identity
 [40]:
   https://github.com/MobileChromeApps/mobile-chrome-apps/blob/master/chrome-cordova/plugins/google.payments/README.md
-[41]: http://developer.chrome.com/apps/pushMessaging.html
-[42]: http://developer.chrome.com/apps/sockets.html
-[43]: http://developer.chrome.com/apps/notifications.html
-[44]: http://developer.chrome.com/apps/storage.html
-[45]: http://developer.chrome.com/apps/syncFileSystem.html
-[46]: http://developer.chrome.com/apps/alarms.html
-[47]: http://developer.chrome.com/apps/idle.html
-[48]: http://developer.chrome.com/apps/power.html
+[41]: /docs/extensions/reference/pushMessaging
+[42]: /docs/extensions/reference/socket
+[43]: /docs/extensions/reference/notifications
+[44]: /docs/extensions/reference/storage
+[45]: /docs/extensions/reference/syncFileSystem
+[46]: /docs/extensions/reference/alarms
+[47]: /docs/extensions/reference/idle
+[48]: /docs/extensions/reference/power
 [49]: https://github.com/MobileChromeApps/mobile-chrome-apps/blob/master/docs/APIStatus.md
 [50]: https://github.com/MobileChromeApps/harness/releases/

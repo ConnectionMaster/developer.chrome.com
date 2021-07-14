@@ -56,13 +56,13 @@ uses a [popup][2] by clicking on the icon.
 This <a href="/extensions/samples#search:google%20mail%20checker">Google Mail Checker extension</a>
 uses a <a href="browserAction">browser action</a>:
 
-{% img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/mG1Uyd3uzcP7sSyKXWkh.png",
+{% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/mG1Uyd3uzcP7sSyKXWkh.png",
        alt="A screenshot of the Google Mail Checker extension", height="79", width="90" %}
 
 This <a href="/extensions/samples#search:mappy">Mappy extension</a> uses a
 <a href="pageAction">page action</a> and <a href="#contentScripts">content script</a>:
 
-{% img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/LrHTrkZVBN96DqNQjtyF.png",
+{% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/LrHTrkZVBN96DqNQjtyF.png",
        alt="A screenshot of the Mappy extension", height="103", width="90" %}
 
 ### Referring to files {: #relative-urls }
@@ -123,7 +123,7 @@ An extension using a page action and a popup can use the [declarative content][2
 in the background script for when the popup is available to users. When the conditions are met, the
 background script communicates with the popup to make it's icon clickable to users.
 
-{% img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/8oLwFaq0VFIQtw4mcA91.png",
+{% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/8oLwFaq0VFIQtw4mcA91.png",
        alt="A browser window containing a page action displaying a popup", height="316", width="325" %}
 
 ### Content scripts {: #contentScripts }
@@ -132,13 +132,13 @@ Extensions that read or write to web pages utilize a [content script][24]. The c
 contains JavaScript that executes in the contexts of a page that has been loaded into the browser.
 Content scripts read and modify the DOM of web pages the browser visits.
 
-{% img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/CNDAVsTnJeSskIXVnSQV.png",
+{% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/CNDAVsTnJeSskIXVnSQV.png",
        alt="A browser window with a page action and a content script", height="316", width="388" %}
 
 Content scripts can communicate with their parent extension by exchanging [messages][25] and storing
 values using the [storage][26] API.
 
-{% img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/466ftDp0EXB4E1XeaGh0.png",
+{% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/466ftDp0EXB4E1XeaGh0.png",
        alt="Shows a communication path between the content script and the parent extension", height="316", width="388" %}
 
 ### Options page {: #optionsPage }
@@ -258,11 +258,10 @@ following resources.
 [1]: /docs/extensions/mv2/tabs
 [2]: /docs/extensions/mv2/user_interface#popup
 [3]: /docs/extensions/mv2/samples#search:google%20mail%20checker
-[4]: /docs/extensions/browserAction
+[4]: /docs/extensions/reference/browserAction
 [5]: /docs/extensions/mv2/samples#search:mappy
-[6]: /docs/extensions/pageAction
-[7]: /docs/extensions/#contentScripts
-[8]: /docs/extensions/runtime#method-getURL
+[6]: /docs/extensions/reference/pageAction
+[8]: /docs/extensions/reference/runtime#method-getURL
 [9]: /docs/extensions/mv2/tabs
 [10]: #background_script
 [11]: #pages
@@ -270,30 +269,30 @@ following resources.
 [13]: #optionsPage
 [14]: /docs/extensions/mv2/background_pages
 [15]: /docs/extensions/mv2/user_interface
-[16]: /docs/extensions/browserAction
-[17]: /docs/extensions/pageAction
-[18]: /docs/extensions/contextMenus
+[16]: /docs/extensions/reference/browserAction
+[17]: /docs/extensions/reference/pageAction
+[18]: /docs/extensions/reference/contextMenus
 [19]: /docs/extensions/reference/omnibox
 [20]: /docs/extensions/reference/commands
 [21]: /docs/extensions/mv2/user_interface#popup
-[22]: /docs/extensions/tabs#method-create
-[23]: /docs/extensions/declarativeContent
+[22]: /docs/extensions/reference/tabs#method-create
+[23]: /docs/extensions/reference/declarativeContent
 [24]: /docs/extensions/mv2/content_scripts
 [25]: /docs/extensions/mv2/messaging
-[26]: /docs/extensions/storage
+[26]: /docs/extensions/reference/storage
 [27]: /docs/extensions/mv2/options
-[28]: /docs/extensions/api_index
-[29]: /docs/extensions/tabs#method-create
-[30]: /docs/extensions/tabs#method-query
-[31]: /docs/extensions/api_index
-[32]: /docs/extensions/extension
-[33]: /docs/extensions/storage
+[28]: /docs/extensions/reference
+[29]: /docs/extensions/reference/tabs#method-create
+[30]: /docs/extensions/reference/tabs#method-query
+[31]: /docs/extensions/reference
+[32]: /docs/extensions/reference/extension
+[33]: /docs/extensions/reference/storage
 [34]: /docs/extensions/mv2/messaging
-[35]: /docs/extensions/storage
+[35]: /docs/extensions/reference/storage
 [36]: https://html.spec.whatwg.org/multipage/webstorage.html
-[37]: /docs/extensions/tabs#type-Tab
-[38]: /docs/extensions/windows#type-Window
+[37]: /docs/extensions/reference/tabs#type-Tab
+[38]: /docs/extensions/reference/windows#type-Window
 [39]: /docs/extensions/mv2/getstarted
 [40]: /docs/extensions/mv2/tut_debugging
-[41]: /docs/extensions/api_index
+[41]: /docs/extensions/reference
 [42]: /docs/extensions/mv2/devguide
